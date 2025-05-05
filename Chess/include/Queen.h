@@ -5,7 +5,6 @@
 #ifndef QUEEN_H
 #define QUEEN_H
 // Queen.h
-#pragma once
 #include "Piece.h"
 
 class Queen : public Piece {
