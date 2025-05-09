@@ -11,7 +11,7 @@ class King : public Piece {
 public:
     King(bool isWhite) : Piece(isWhite) {}
 
-    bool isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* board[8][8]) override;
+    bool isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* board[8][8]) const override;
     char getSymbol() const override {
         return isWhite ? 'K' : 'k';
     }
