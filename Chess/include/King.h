@@ -5,7 +5,6 @@
 #ifndef KING_H
 #define KING_H
 // King.h
-#pragma once
 #include "Piece.h"
 
 class King : public Piece {
