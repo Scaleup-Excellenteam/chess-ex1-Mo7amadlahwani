@@ -5,7 +5,7 @@
 #include "King.h"
 #include <cmath>
 
-bool King::isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* board[8][8]) {
+bool King::isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* board[8][8])const {
     int rowDiff = std::abs(dstRow - srcRow);
     int colDiff = std::abs(dstCol - srcCol);
 
