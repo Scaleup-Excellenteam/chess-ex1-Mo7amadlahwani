@@ -8,7 +8,6 @@
 
 
 // Rook.h
-#pragma once
 #include "Piece.h"
 
 class Rook : public Piece {
