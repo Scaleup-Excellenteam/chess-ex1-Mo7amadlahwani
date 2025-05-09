@@ -5,7 +5,7 @@
 #include "Bishop.h"
 #include <cmath>
 
-bool Bishop::isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* board[8][8]) {
+bool Bishop::isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* board[8][8]) const  {
     if (std::abs(dstRow - srcRow) != std::abs(dstCol - srcCol))
         return false; // must move diagonally
 
@@ -13,7 +13,7 @@ bool Bishop::isLegalMove(int srcRow, int srcCol, int dstRow, int dstCol, Piece* 
     int colStep = (dstCol > srcCol) - (dstCol < srcCol);
 
     int row = srcRow + rowStep, col = srcCol + colStep;
-    while (row != dstRow && col != dstCol) {
+    while (row != dstRow) {
         if (board[row][col] != nullptr)
             return false;
         row += rowStep;
